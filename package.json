@@ -1,0 +1,20 @@
+{
+  "name": "nodejs-multipart-uploader",
+  "version": "1.0.0",
+  "description": "Multipart uploader to use with AWS for consistent and resumable multipart uploads to S3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "author": "Mitchell Rhoads",
+  "license": "MIT",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.574.0",
+    "@aws-sdk/s3-request-presigner": "^3.575.0",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  }
+}
