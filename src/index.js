@@ -18,6 +18,10 @@ app.use(
 const multipartUploadRouter = require("./routers/multipartUploadRouter.js");
 app.use("/uploader", multipartUploadRouter);
 
+app.use("/", (req, res) => {
+  res.json({ message: "hello from server" });
+});
+
 const port = 8080;
 app.listen(port, () => {
   console.log(`App listening on port ${port}`);
